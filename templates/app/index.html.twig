@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+
+    <main class="container">
+        <div class="row">
+            {% if app.user %}
+                <h1>Bienvenue dans votre espace personnel {{ user.email }} !</h1>
+            {% else %}
+                <h1>Bienvenue ! veillez vous authentifier pour acceder à votre éspace </h1>
+
+            {% endif %}
+        </div>
+
+    </main>
+
+{% endblock %}
