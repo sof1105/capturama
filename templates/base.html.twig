@@ -20,7 +20,7 @@
     <body style="padding: 20px">
     <nav class="navbar">
 
-        {% if is_granted('ROLE_ADMIN') %}<a href="{{ path('app_user_index') }}" class="btn btn-outline-danger my-2 my-sm-0">Users</a> {% endif %}
+        {% if is_granted('ROLE_SUPER_ADMIN') %}<a href="{{ path('app_user_index') }}" class="btn btn-outline-danger my-2 my-sm-0">Users</a> {% endif %}
 
         <form class="form-inline my-2 my-lg-0" style="flex-direction: row-reverse;">
             {% if app.user %}
